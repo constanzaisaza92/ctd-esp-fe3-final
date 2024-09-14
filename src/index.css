@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  padding-bottom: 2rem;
+}
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
@@ -23,40 +28,77 @@ h1{
   text-align: center;
 }
 
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+nav {
+  background-color: #8888881e;
 }
 
-a{
+
+nav > div {
+  display: flex;
+  padding: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  width: 80vw;
+}
+
+nav > div h1 {
+  margin: 0px;
+}
+
+.title {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+a {
   color: #000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
+
 a:hover{
   color: rgb(136, 136, 136);
 } 
 
 footer {
   display: flex;
+  flex-direction: column;
+}
+
+.contenedorRojo {
+  background-color: red;
+  width: 100%;
+}
+
+.contenedorRojo > :first-child {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  color: white;
+  height: 40px;
+  max-width: 1250px;
+  width: 80vw;
+  font-weight: bold;
+}
+
+footer > :last-child {
+  flex-direction: column;
   text-align: center;
-  padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
   margin-top: 2rem;
 }
 
-footer > img{
+footer img{
   width: 200px;
   margin: 0;
 }
-footer > p{
+footer p{
   margin: 0;
   padding-top: 0.7rem;
 }
@@ -80,6 +122,10 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
+.card img {
+  width: 100%;
+}
+
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }
@@ -88,6 +134,7 @@ form{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+  max-width: 1300px;
   width: 90vw;
   height: auto;
   flex-wrap: wrap;
@@ -117,6 +164,15 @@ tr:nth-child(even) {
   background-color: #12121296;
   color: white;
 }
-.dark > a {
+.dark a {
   color: white;
+}
+
+nav.dark{
+  background-color: #121212 ;
+  color: white;
+}
+
+.mensajeValidacion {
+  text-align: left;
 }
